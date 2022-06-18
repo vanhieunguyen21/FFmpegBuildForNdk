@@ -64,11 +64,15 @@ echo \"Removing old build\"
 rm -rf ${BUILD_PATH}
 
 echo \"Building libx264\"
-bash /${LIBX264_NAME}/build_all.sh
+cd ${LIBX264_NAME}
+bash build_all.sh
+cd ..
 echo \"Libx264 building done\"
 
 echo \"Building FFmpeg\"
-bash /${FFMPEG_NAME}/build_all.sh
+cd ${FFMPEG_NAME}
+bash build_all.sh
+cd ..
 echo \"FFmpeg building done\"
 ")
 

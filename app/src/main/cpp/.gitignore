@@ -1,0 +1,5 @@
+/ffmpeg-*
+/x264-*
+ffmpeg*.bz2
+x264*.bz2
+build_all.sh
